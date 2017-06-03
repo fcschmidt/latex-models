@@ -1,0 +1,190 @@
+\documentclass[12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,top=2.554cm,bottom=2.554cm,left=2.5cm,right=2.5cm]{geometry}
+%\usepackage[final]{pdfpages}
+
+% Alterar a font padrão
+%\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\graphicspath{{./imagens/}}
+
+%\usepackage{graphicx,indentfirst,url}
+\usepackage{color}
+\usepackage[colorlinks=true, hidelinks, hyperindex, breaklinks]{hyperref}
+\usepackage{url}
+\usepackage{breakurl}
+
+
+\hypersetup
+  {
+    pdftitle = {Título do Projeto},
+    pdfauthor = {Nome do Aluno},
+    pdfsubject = {Assunto},
+    pdfkeywords = {Palavra chave1, Palavra chave2, Palavra chave3, Palavra chave4},
+    pdfcreator = {LaTeX},
+    linkbordercolor = {1 1 1},
+    pdftoolbar = true,
+    pdfmenubar = true,
+    colorlinks = true,
+    citecolor=black,
+    linkcolor=black,
+    urlcolor=black,
+  }
+ 
+% Compila o indice
+\makeindex 
+% Define os textos da citação
+\def\@cite#1#2{({#1\if@tempswa:#2\fi})}
+
+
+\begin{document}
+
+%-----------------------------------------
+%     CAPA
+%-----------------------------------------
+\begin{titlepage}
+  \centering
+  \Large
+  \textsc{\textbf{Instituto de Ciências Exatas e Tecnologia}\\
+  {Nome da Universidade - UN}}\\
+  \textbf{Campus Cidade, Estado}\\[2em]
+
+  Proposta de projeto\\[7em]
+  \textsc{\textbf{\fontsize{17}{\baselineskip}\selectfont Título do Projeto Proposto}}\\[7em]
+
+  Aluno: \\ Nome do Aluno \\[2em]
+  Orientador: \\ Prof. Título. Nome do Orientador\\[9em]
+  Cidade, Março de 2017
+
+\end{titlepage}
+
+% Adicionando a numeração de página para o restante do documento
+\setcounter{page}{1}
+\pagestyle{plain}
+
+
+%-----------------------------------------
+%    RESUMO
+%-----------------------------------------
+\begin{abstract}
+\noindent
+
+Resumo sobre o projeto proposto....
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at pretium diam.
+Praesent ut sollicitudin nisl. Etiam vehicula convallis leo, vel pulvinar tortor volutpat a.
+Duis tempus felis nec arcu sagittis, ac tincidunt urna molestie. Cras quis tristique libero,
+ac posuere nisl. Nam commodo id felis a molestie. Phasellus tincidunt molestie commodo.
+Fusce efficitur ullamcorper elit sit amet dapibus. Nullam semper ligula vel lectus vehicula
+finibus. 
+
+Sed diam sem, eleifend sit amet risus et, pretium lacinia justo.
+Fusce auctor dolor sit amet aliquet pulvinar. Vivamus in viverra felis, id dictum odio. In-
+terdum et malesuada fames ac ante ipsum primis in faucibus. Donec ullamcorper tempus
+arcu, in porta risus porta id. Vestibulum ut fermentum felis. Duis aliquam, enim ut cursus
+blandit, justo ex dictum augue, et accumsan risus metus sit amet erat. Curabitur eget
+ipsum sem. Nulla vestibulum dui id accumsan sollicitudin. Vivamus tempor turpis elemen-
+tum tellus mollis, ut viverra magna gravida. Ut laoreet ullamcorper ipsum, sed fermentum
+purus placerat vitae. Praesent auctor venenatis risus nec cursus. Vivamus elementum erat a
+tortor interdum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+posuere cubilia Curae.
+
+\noindent 
+\\
+
+\noindent
+\textbf{Palavras-chave:} Palavra chave1, Palavra chave2, Palavra chave3, Palavra chave4,
+
+\end{abstract}
+
+\newpage
+
+
+%-----------------------------------------
+%    Adiciona o Sumário
+%-----------------------------------------
+\tableofcontents
+\newpage
+
+
+%-----------------------------------------
+%    INTRODUÇÃO
+%-----------------------------------------
+\section{Introdução}
+\label{sec::introducao}
+Sua introdução.....
+Aqui você irá apresentar de forma clara e concisa o problema a ser tratado.
+
+Para contextualizar você pode pensar nos problemas da sua área. Quais são esses problemas?\\
+Como o seu projeto está relacionado à estes ou este problema.\\
+Qual a relevância do seu projeto e como ele irá contribuir para a solução desse(s) problema(s).
+
+
+%-----------------------------------------
+%    OBJETIVOS
+%-----------------------------------------
+
+\section{Objetivos}
+\label{s_objetivos}
+Objetivos do seu projeto...
+
+Os objetivos podem ser quebrados ou divididos em três partes, por exemplo:
+
+\begin{itemize}
+\item \textbf{Objetivo Geral};
+\item \textbf{Objetivo Especifico};
+\item \textbf{Metas}.
+\end{itemize}
+
+
+%-----------------------------------------
+%    METODOLOGIA
+%-----------------------------------------
+\section{Metodologia}
+\label{sec::metodologia}
+Nesta seção você irá descrever sobre os aspectos metodológicos relacionados ao desenvolvimento do projeto de pesquisa proposto.\\
+Tais como técnicas, módulos e ou ferramentas que serão empregadas no desenvolvimento de seu projeto.
+
+%----- Metodologia 3.1 -----%
+\subsection{Metodologia 3.1 (\textit{Texto})}
+
+Uma subseção para descrever algum método especifico que compõem a metodologia utilizada...
+
+
+%----- Metodologia 3.2 -----%
+\subsection{Metodologia 3.2 - \textit{Texto}}
+Outra subseção para descrever um outro método especifico que compõem a metodologia utilizada...
+
+
+%----- Metodologia 3.3 -----%
+\subsection{Metodologia 3.3 \textit{Texto}}
+Outra subseção para descrever algum método especifico que compõem a metodologia utilizada...
+
+
+%-----------------------------------------
+%    Cronograma
+%-----------------------------------------
+\section{Cronograma}
+\label{sec::cronograma}
+Aqui irá a tabela contendo o cronograma do projeto...\\
+Um projeto é uma proposta, e como tal é necessário conter um cronograma de atividades.\\
+Em alguns casos não é necessário adicionar o cronograma diretamente aqui.
+
+
+%-----------------------------------------
+%    Bibliografia
+%-----------------------------------------
+\newpage
+\section{Referências}
+\nocite{*}
+\vspace{-3em}
+\bibliographystyle{plain}
+\renewcommand{\refname}{}
+\bibliography{referencias}
+
+\end{document}
