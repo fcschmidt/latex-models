@@ -3,7 +3,7 @@ Modelos desenvolvidos e ou editados de modelos já existentes para atender uma n
 
 - [Modelo para IC - Proposta de Projeto](https://github.com/fcschmidt/latex-models/tree/master/ic-pre-projeto-model)
 - [Modelo para IC - Relatório]()
-- [Modelo para APS - Atividade Prática Supervisionada]https://github.com/fcschmidt/latex-models/tree/master/aps-model() <sup>[[1](#atividade-prática-supervisionada)]</sup>
+- [Modelo para APS - Atividade Prática Supervisionada](https://github.com/fcschmidt/latex-models/tree/master/aps-model) <sup>[[1](#atividade-prática-supervisionada)]</sup>
 - [Modelo para TCC]()
 
 
