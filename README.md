@@ -1,9 +1,9 @@
 ## Modelos Latex
 Modelos desenvolvidos e ou editados de modelos já existentes para atender uma necessidade pessoal.
 
-- [Modelo para IC - Proposta de Projeto]()
+- [Modelo para IC - Proposta de Projeto](https://github.com/fcschmidt/latex-models/tree/master/ic-pre-projeto-model)
 - [Modelo para IC - Relatório]()
-- [Modelo para APS - Atividade Prática Supervisionada]() <sup>[[1](#atividade-prática-supervisionada)]</sup>
+- [Modelo para APS - Atividade Prática Supervisionada]https://github.com/fcschmidt/latex-models/tree/master/aps-model() <sup>[[1](#atividade-prática-supervisionada)]</sup>
 - [Modelo para TCC]()
 
 
