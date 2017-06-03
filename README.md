@@ -1,5 +1,5 @@
 ## Modelos Latex
-Modelos desenvolvidos e ou editados de modelos já existentes para atender uma necessidade pessoal.
+Modelos desenvolvidos para atender uma necessidade pessoal.
 
 - [Modelo para IC - Proposta de Projeto](https://github.com/fcschmidt/latex-models/tree/master/ic-pre-projeto-model)
 - [Modelo para IC - Relatório]()
