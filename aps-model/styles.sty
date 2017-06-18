@@ -1,0 +1,29 @@
+\ProvidesPackage{styles}
+
+\RequirePackage[a4paper,top=2.554cm,bottom=2.554cm,left=2.5cm,right=2.5cm]{geometry}
+\RequirePackage[brazil]{babel}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{listings}
+% Altera a font padrão
+%\RequirePackage{helvet}
+%\RequirePackage{arial}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Configuração de Caminho das Imagens
+%\RequirePackage{graphicx,indentfirst,url}
+\RequirePackage{graphicx}
+\graphicspath{{./imagens/}}
+
+
+\RequirePackage{color}
+\RequirePackage[colorlinks=true, hidelinks, hyperindex, breaklinks]{hyperref}
+\RequirePackage{url, breakurl}
+
+% Tabelas Coloridas
+%\RequirePackage[table]{xcolor}
+%\RequirePackage{colortbl}
+%\definecolor{cLightGray}{rgb}{.90,.90,.90}
+
+% Define os textos da citação
+\def\@cite#1#2{({#1\if@tempswa:#2\fi})}
