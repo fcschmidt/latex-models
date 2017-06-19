@@ -1,75 +1,54 @@
 \documentclass[12pt]{article}
 \usepackage{styles}
 
-%-------------------------------------------------
-%  	  Informações do PDF
-%-------------------------------------------------
-\hypersetup{
-    pdftitle = {Título da APS}, 
-    pdfauthor = {Fábio Schimidt},
-    pdfsubject = {APS},
+  \hypersetup
+  {
+    pdftitle = {Titulo da Tese},
+    pdfauthor = {Nome do autor},
+    pdfsubject = {Assunto},
+    pdfkeywords = {palavras, chave},
     pdfcreator = {LaTeX},
     linkbordercolor = {1 1 1},
     pdftoolbar = true,
     pdfmenubar = true,
-    colorlinks = true,  			% false: boxed links; true: colored links
-    citecolor=black,		        % color of links to bibliography
+    colorlinks = true,
+    citecolor=black,
     linkcolor=black,
     urlcolor=black,
-    %filecolor=blue,      		% color of file links
+    %filecolor=blue,  
 	%	urlcolor=blue,
 	%	bookmarksdepth=4
-}
+  }
+  
+  \makeindex 
+  \begin{document}
+  
+  \input arquivos/capa.tex
 
-%------- 
-% Compila o Indice
-%-------
-\makeindex 
+  % Adicionando a numeração de página para o restante do documento
+  \setcounter{page}{1}
+  \pagestyle{plain}
 
-%-------------------------------------------------
-%    INICIO DO DOCUMENTO
-%------------------------------------------------- 
-\begin{document}
+  \newpage
 
-% Capa
-\include{arquivos/capa}
+  \tableofcontents
+  \newpage
+  
+  \input arquivos/objetivos.tex
+ 
+  \input arquivos/intro.tex
 
-% Adicionando a numeração de página para o restante do documento
-\setcounter{page}{1}
-\pagestyle{plain}
+  \input arquivos/fundamentos.tex
 
-% Pula para proxima página
-\newpage
+  \input arquivos/plano-dev.tex
 
-% Adiciona o Sumário
-\tableofcontents
-\newpage
+  \input arquivos/programa.tex
 
-% Objetivo e Motivação do Trabalho
-\include{arquivos/objetivos}
+  \input arquivos/relatorio.tex
 
-% Introdução
-\include{arquivos/introducao}
+  \input arquivos/funcionamento.tex
 
-% Fundamentos
-\include{arquivos/fundamentos}
-
-% Plano de Desenvolvimento da Aplicação
-\include{arquivos/plano-dev}
-
-% Projeto do Programa
-\include{arquivos/programa}
-
-% Relatório com Linhas de Código do Programa
-\include{arquivos/relatorio}
-
-% Apresentação do Programa
-\include{arquivos/funcionamento}
-
-\newpage
-% Referências Bibliograficas
-\include{arquivos/referencias}
-\end{document}
-%-------------------------------------------------
-%    FIM DO DOCUMENTO
-%------------------------------------------------- 
+  \newpage
+  \input arquivos/referencias.tex
+  
+  \end{document}
