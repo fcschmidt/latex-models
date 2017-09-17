@@ -1,12 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Proposta de Projeto - IC
+% LaTeX Template
+% Version 1.2 (7/4/2017)
+% Modificado em (14/09/2017)
+%
+% author:
+% Fábio C. Schmidt (fcschimidt@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Nota:
+% Use o compiler.sh para compilar e excluir aquivos gerados pela compilação
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACOTES E OUTRAS CONFIGURAÇÕES DO DOCUMENTO
+%----------------------------------------------------------------------------------------
 \documentclass[12pt]{article}
 \usepackage{styles}
 
  \hypersetup
   {
-    pdftitle = {Estratégia de Navegação em Róbotica Móvel para Exploração e Patrulhamento de um Ambiente},
-    pdfauthor = {Fábio César Schimidt},
+    pdftitle = {Titulo do Projeto},
+    pdfauthor = {Nome do autor},
     pdfsubject = {Iniciação Científica - Proposta de Projeto},
-    pdfkeywords = {Navegação, Robótica Móvel, Patrulhamento, Colônia de Formigas.},
+    pdfkeywords = {palavra chave1, palavra chave2, palavra chave3, palavra chave4.},
     pdfcreator = {LaTeX},
     linkbordercolor = {1 1 1},
     pdftoolbar = true,
@@ -22,31 +42,45 @@
   
   \makeindex
   \def\@cite#1#2{({#1\if@tempswa:#2\fi})}
+  %------------------------------------------------------------------------------------------
   
+  %----------------------------------------------------------------------------------------
+  %	CONTEÚDO DO DOCUMENTO
+  %----------------------------------------------------------------------------------------
   \begin{document}
   
-  \input arquivos_tex/capa.tex
+  %----------------------------------------------------------------------------------------
+  %	APS CAPA CONTEÚDO
+  %----------------------------------------------------------------------------------------
+  \input{arquivos_tex/capa.tex}
+  %----------------------------------------------------------------------------------------
 
-  % Adicionando a numeração de página para o restante do documento
-  \setcounter{page}{1}
-  \pagestyle{plain}
+  \setcounter{page}{1} % Adicionando a numeração de página para o restante do documento
+  \pagestyle{plain} % estilo da página
   
-  \input arquivos_tex/abstract.tex
-
+  %----------------------------------------------------------------------------------------
+  %	RESUMO DO PROJETO
+  %----------------------------------------------------------------------------------------
+  \input{arquivos_tex/abstract.tex}
+  %----------------------------------------------------------------------------------------
+  
   \newpage
 
   \tableofcontents
   \newpage
   
-  \input arquivos_tex/intro.tex
-  
-  \input arquivos_tex/objetivos.tex
-  
-  \input arquivos_tex/metodologia.tex
-  
-  \input arquivos_tex/cronograma.tex 
-  
+  %----------------------------------------------------------------------------------------
+  %	PRÉ-PROJETO CONTEÚDO DOS ARQUIVOS
+  %	Cada seção é importada separadamente, 
+  % abra cada arquivo por vez para modificar o conteúdo
+  %----------------------------------------------------------------------------------------
+  \input{arquivos_tex/intro.tex}
+  \input{arquivos_tex/objetivos.tex}
+  \input{arquivos_tex/metodologia.tex}
+  \input{arquivos_tex/cronograma.tex} 
   \newpage
-  \input arquivos_tex/referencias.tex
-  
+  \input{arquivos_tex/referencias.tex}
+  %----------------------------------------------------------------------------------------
+
   \end{document}
+  %---------------------------------------------------------------------------------------

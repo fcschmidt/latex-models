@@ -1,3 +1,22 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APS - Atividade Prática Supervisionada
+% LateX Template
+% Version 1.0 (19/06/2017)
+%
+% Author:
+% Fábio C. Schmidt (fcschimidt@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Nota:
+% Use o compiler.sh para compilar e excluir aquivos gerados pela compilação
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACOTES E OUTRAS CONFIGURAÇÕES DO DOCUMENTO
+%----------------------------------------------------------------------------------------
 \documentclass[12pt]{article}
 \usepackage{styles}
 
@@ -21,34 +40,42 @@
   }
   
   \makeindex 
+  %----------------------------------------------------------------------------------------
+  
+  %----------------------------------------------------------------------------------------
+  %	CONTEÚDO DO DOCUMENTO
+  %----------------------------------------------------------------------------------------
   \begin{document}
   
-  \input arquivos/capa.tex
+  %----------------------------------------------------------------------------------------
+  %	APS CAPA CONTEÚDO
+  %----------------------------------------------------------------------------------------
+  \input{arquivos/capa.tex}
+  %----------------------------------------------------------------------------------------
 
-  % Adicionando a numeração de página para o restante do documento
-  \setcounter{page}{1}
-  \pagestyle{plain}
+  \setcounter{page}{1} % Adicionando a numeração de página para o restante do documento
+  \pagestyle{plain} % estilo da página
 
   \newpage
 
   \tableofcontents
   \newpage
   
-  \input arquivos/objetivos.tex
- 
-  \input arquivos/intro.tex
-
-  \input arquivos/fundamentos.tex
-
-  \input arquivos/plano-dev.tex
-
-  \input arquivos/programa.tex
-
-  \input arquivos/relatorio.tex
-
-  \input arquivos/funcionamento.tex
-
+  %----------------------------------------------------------------------------------------
+  %	APS CONTEÚDO DOS ARQUIVOS
+  %	Cada seção é importada separadamente, 
+  % abra cada arquivo por vez para modificar o conteúdo
+  %----------------------------------------------------------------------------------------
+  \input{arquivos/objetivos.tex}
+  \input{arquivos/intro.tex}
+  \input{arquivos/fundamentos.tex}
+  \input{arquivos/plano-dev.tex}
+  \input{arquivos/programa.tex}
+  \input{arquivos/relatorio.tex}
+  \input{arquivos/funcionamento.tex}
   \newpage
-  \input arquivos/referencias.tex
+  \input{arquivos/referencias.tex}
+  %----------------------------------------------------------------------------------------
   
   \end{document}
+  %---------------------------------------------------------------------------------------
