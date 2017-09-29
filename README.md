@@ -16,4 +16,4 @@ Bem como desenvolver a capacidade de pesquisa e a elaboração de uma mini-mamog
 
 
 #### LICENSE
-Under the Licence [MIT](https://opensource.org/licenses/MIT).
+Under the Licence [MIT](https://opensource.org/licenses/MIT) and [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
